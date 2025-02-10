@@ -1,5 +1,5 @@
-/* Responding to events */
 
+/* Responding to events */
 
 export default function Example_8() {
   function handleClick() {
