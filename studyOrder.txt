@@ -1,6 +1,7 @@
 Entry Points
 =============
 1) Quick Start
+2) Describing the UI
 
 
 
