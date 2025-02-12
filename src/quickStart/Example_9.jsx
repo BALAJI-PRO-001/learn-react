@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 function CounterWithOwnState() {
-  let [ count, setCount ] = useState(0);
+  const [ count, setCount ] = useState(0);
 
   function handleClick() {
     setCount(count + 1);
