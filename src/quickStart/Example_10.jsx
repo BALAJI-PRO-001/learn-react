@@ -1,5 +1,9 @@
 
-/* Updating the screen */
+/* 
+  Updating the screen
+  ===================
+  Shared State Example  
+*/
 
 import { useState } from "react";
 
