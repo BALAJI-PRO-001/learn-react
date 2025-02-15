@@ -5,6 +5,7 @@ import PassingProps from "./PassingProps";
 import DefaultValue from "./DefaultValue";
 import ForwardingProps from "./ForwardingProps";
 import Children from "./Children";
+import PropsChangingOverTime from "./PropsChangingOverTime";
 
 
 export default function Example_2() {
@@ -17,6 +18,8 @@ export default function Example_2() {
       <ForwardingProps />
       <hr />
       <Children />
+      <hr />
+      <PropsChangingOverTime />
     </>
   );
 }
