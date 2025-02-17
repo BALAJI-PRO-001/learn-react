@@ -21,6 +21,7 @@
 import Example_1 from './describingTheUI/example_1';
 import Example_2 from './describingTheUI/example_2';
 import Example_3 from './describingTheUI/example_3';
+import Example_4 from './describingTheUI/example_4';
 
 
 export default function App() {
@@ -43,7 +44,8 @@ export default function App() {
 
       {/* <Example_1 /> */}
       {/* <Example_2 /> */}
-      <Example_3 />
+      {/* <Example_3 /> */}
+      <Example_4 />
     </div>
   );
 }
