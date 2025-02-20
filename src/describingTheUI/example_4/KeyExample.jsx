@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import data from './data.js';
 
 export default function KeyExample() {
@@ -10,11 +10,13 @@ export default function KeyExample() {
   }
 
   function handleAddUser() {
+    const newUser = {
+      id: users[users.length - 1].id + 1,
+      name: name
+    };
+    
     setUsers([
-      {
-        id: users[users.length -1].id + 1,
-        name: name
-      },
+      newUser,
       ...users
     ]);
   }
@@ -26,9 +28,15 @@ export default function KeyExample() {
       <button onClick={handleAddUser}>Add</button>
       <ul>
         {users.map((user) => {
+          /* 
+            return <Fragment key={user.id}>
+              <li>{user.name}</li>
+            </Fragment>
+          */
           return <li key={user.id}>{user.name}</li>
         })}
       </ul>
     </>
   );
 }
+
